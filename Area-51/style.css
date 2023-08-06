@@ -10,6 +10,11 @@
     border-radius: 12px;
 }
 
+@font-face {
+    font-family: Open;
+    src: url(fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
 #main {
     height: 100vh;
     display: flex;
@@ -23,6 +28,8 @@
 }
 h2 {
     margin-bottom: 3px;
+    margin-left: 35px;
+    font: 300 30px 'Open', sans-seriff;
 }
 
 input{
@@ -40,9 +47,20 @@ input{
         border-radius: 12px;
         background-color: #f0e4e4;
         cursor: pointer;
-        margin-top: 5px;}
+        margin-top: 5px;
+        margin-left: 7px;
+    }
 
         button:hover {
             background-color: #92bbe7;
           }
-          
+
+        p {
+            margin-left: 10px;
+            font: 300 30px 'Open', sans-seriff
+            color #E3F76D
+        }
+
+        label {
+            font: 300 14px 'Open', sans-seriff
+        }
