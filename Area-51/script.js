@@ -1,15 +1,16 @@
-const funcionariosAutorizados = [1000, 1999];
-let button = document.getElementById('verificarBtn');
-button.addEventListener('click', function() {
-
-verificarBtn.addEventListener("click", () => {
-    const numeroCartaoInput = document.getElementById("numeroCartao");
-    const numeroCartao = parseInt(numeroCartaoInput.value);
-
-    if (funcionariosAutorizados.includes(numeroCartao)) {
-        resultado.textContent = "Acesso permitido! Bem-vindo.";
+document.getElementById("Acesso").addEventListener("submit", function(event) {
+    event.preventDefault();
+  
+    const cardNumber = parseInt(document.getElementById("numero-do-cartao").value);
+    const resultElement = document.getElementById("resultado");
+  
+    if (cardNumber >= 1000 && cardNumber <= 1999) {
+      resultElement.textContent = "Acesso total concedido.";
+    } else if (cardNumber >= 2000 && cardNumber <= 2999) {
+      resultElement.textContent = "Acesso limitado concedido.";
+    } else if (cardNumber > 3000) {
+      resultElement.textContent = "Acesso não permitido.";
     } else {
-        resultado.textContent = "Acesso negado. Você não possui permissão para acessar esta área.";
+      resultElement.textContent = "Número de cartão inválido.";
     }
-}
-));
+  });

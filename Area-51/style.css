@@ -41,3 +41,8 @@ input{
         background-color: #f0e4e4;
         cursor: pointer;
         margin-top: 5px;}
+
+        button:hover {
+            background-color: #92bbe7;
+          }
+          
